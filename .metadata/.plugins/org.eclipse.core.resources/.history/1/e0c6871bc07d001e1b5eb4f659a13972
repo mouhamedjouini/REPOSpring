@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                     "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configurations de connexion à la base de données -->
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ma_base_de_donnees</property>
+        <property name="hibernate.connection.username">votre_nom_utilisateur</property>
+        <property name="hibernate.connection.password">votre_mot_de_passe</property>
+
+        <!-- Dialecte Hibernate pour la base de données MySQL -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <!-- Autres propriétés de configuration Hibernate -->
+        <!-- ... -->
+
+    </session-factory>
+</hibernate-configuration>

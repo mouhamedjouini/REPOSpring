@@ -1,0 +1,9 @@
+server.port=8090
+spring.datasource.url=jdbc:mysql://localhost:3306/spring_D?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+spring.datasource.username=root
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
+spring.profiles.active=dev
+spring.jpa.open-in-view=false

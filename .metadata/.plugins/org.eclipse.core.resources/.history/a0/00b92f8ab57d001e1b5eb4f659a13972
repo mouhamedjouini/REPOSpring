@@ -1,0 +1,28 @@
+package com.example.demo;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import MODEL.Employee;
+
+@SpringBootTest
+class SpringbootBackendApplicationTests {
+	@Autowired
+	private repository.EmployeeRepository EmployeeRepository;
+	@Test
+	public void testCreateProduit() {
+	Employee emp = new Employee(1, "PC Dell","ff","bbbb");
+	EmployeeRepository.save(emp);
+	}
+
+
+	@Test
+	void contextLoads() {
+	}
+
+	public static void main(String[] args) {
+	
+	}
+
+}
